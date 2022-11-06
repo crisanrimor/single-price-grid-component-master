@@ -26,17 +26,17 @@ body{
 
 .main__container{
     width: 90%;
-    max-width: 700px;
+    max-width: 43.75rem;
     margin: auto;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    border-radius: 8px;
+    border-radius: 0.5rem;
     overflow: hidden;
     box-shadow: 1px 4px 10px rgba(0, 0, 0, .1);
 }
 
 .main__card{
-    padding: 2.5rem;
+    padding: 2.5em;
 }
 
 .main__card--1{
@@ -59,13 +59,13 @@ body{
 .main__title{
     color: var(--cyan);
     font-size: 1.5rem;
-    margin-bottom: 20px;
+    margin-bottom: 1.25em;
 }
 
 .main__subtitle{
     font-size: 1.1rem;
     color: var(--light-gray);
-    margin-bottom: 15px;
+    margin-bottom: 0.9375em;
 }
 
 .yellow{
@@ -81,7 +81,7 @@ body{
 .main__price{
     color: var(--light-gray);
     display: flex;
-    gap: 10px;
+    gap: 0.625rem;
     align-items: center;
 }
 
@@ -98,7 +98,7 @@ body{
 
 .main__info{
     color: var(--light-gray);
-    margin: 10px 0;
+    margin: 0.625em 0;
 }
 
 .main__cta{
@@ -106,10 +106,10 @@ body{
     background-color: var(--bright-yellow);
     text-decoration: none;
     color: #fff;
-    padding: 15px 0;
+    padding: 0.9375em 0;
     text-align: center;
     font-weight: 700;
-    border-radius: 8px;
+    border-radius: 0.5rem;
     margin-top: auto;
     box-shadow: 1px 4px 10px rgba(0, 0, 0, .1);
 }
@@ -120,7 +120,7 @@ body{
 
 .main__blockparagraph{
     color: var(--light-gray);
-    font-size: 14px;
+    font-size: 0.875rem;
     line-height: 1.7;
     font-weight: 300;
 }
@@ -128,8 +128,8 @@ body{
 @media (max-width: 768px){
     .main__container{
         grid-template-columns: 1fr;
-        max-width: 400px;
-        margin: 50px auto;
+        max-width: 25rem;
+        margin: 3.125em auto;
     }
 
     .main__card--1{
