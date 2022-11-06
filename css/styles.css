@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@300;400;700&display=swap');
+
+:root{
+    --cyan: hsl(179, 62%, 43%);
+    --bright-yellow: hsl(71, 73%, 54%);
+    --light-gray: hsl(204, 43%, 93%);
+    --grayish-blue: hsl(218, 22%, 67%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Karla', sans-serif;
+}
+
+.main{
+    background-color: var(--light-gray);
+    min-height: 100vh;
+    display: flex;
+    overflow: hidden;
+}
+
+.main__container{
+    width: 90%;
+    max-width: 700px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 1px 4px 10px rgba(0, 0, 0, .1);
+}
+
+.main__card{
+    padding: 2.5rem;
+}
+
+.main__card--1{
+    grid-column: 1/3;
+    background-color: #fff;
+}
+
+.main__card--2{
+    background-color: var(--cyan);
+    display: flex;
+    flex-direction: column;
+    box-shadow: 1px 4px 10px rgba(0, 0, 0, .1);
+}
+
+.main__card--3{
+    background-color: hsla(179, 62%, 43%, 0.7);
+    box-shadow: 1px 4px 10px rgba(0, 0, 0, .1);
+}
+
+.main__title{
+    color: var(--cyan);
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.main__subtitle{
+    font-size: 1.1rem;
+    color: var(--light-gray);
+    margin-bottom: 15px;
+}
+
+.yellow{
+    color: var(--bright-yellow);
+}
+
+.main__paragraph{
+    color: var(--grayish-blue);
+    line-height: 1.5;
+    width: 90%;
+}
+
+.main__price{
+    color: var(--light-gray);
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.main__number{
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.main__month{
+    opacity: 0.8;
+    letter-spacing: 1px;
+    font-weight: 300;
+}
+
+.main__info{
+    color: var(--light-gray);
+    margin: 10px 0;
+}
+
+.main__cta{
+    display: block;
+    background-color: var(--bright-yellow);
+    text-decoration: none;
+    color: #fff;
+    padding: 15px 0;
+    text-align: center;
+    font-weight: 700;
+    border-radius: 8px;
+    margin-top: auto;
+    box-shadow: 1px 4px 10px rgba(0, 0, 0, .1);
+}
+
+.main__block{
+    width: 70%;
+}
+
+.main__blockparagraph{
+    color: var(--light-gray);
+    font-size: 14px;
+    line-height: 1.7;
+    font-weight: 300;
+}
+
+@media (max-width: 768px){
+    .main__container{
+        grid-template-columns: 1fr;
+        max-width: 400px;
+        margin: 50px auto;
+    }
+
+    .main__card--1{
+        grid-column: unset;
+    }
+
+    .main__subtitle{
+        font-size: 1rem;
+    }
+}
